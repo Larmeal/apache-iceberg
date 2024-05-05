@@ -1,0 +1,124 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "684cd29d-a618-4d94-a0f5-b26090db10b3",
+  "location" : "warehouse/lakehouse",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1714900979506,
+  "last-column-id" : 12,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "uid",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "synopsis",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "genre",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "aired",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "episodes",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 7,
+      "name" : "members",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 8,
+      "name" : "popularity",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 9,
+      "name" : "ranked",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 10,
+      "name" : "score",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 11,
+      "name" : "img_url",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 12,
+      "name" : "link",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "Larmeal",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 7169222042875762805,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 7169222042875762805,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7169222042875762805,
+    "timestamp-ms" : 1714900979506,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714900916000",
+      "added-data-files" : "16",
+      "added-records" : "19311",
+      "added-files-size" : "4294793",
+      "changed-partition-count" : "1",
+      "total-records" : "19311",
+      "total-files-size" : "4294793",
+      "total-data-files" : "16",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/lakehouse/metadata/snap-7169222042875762805-1-e184b4a1-4eca-4600-bd63-7ad663ef0b7c.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1714900979506,
+    "snapshot-id" : 7169222042875762805
+  } ],
+  "metadata-log" : [ ]
+}
