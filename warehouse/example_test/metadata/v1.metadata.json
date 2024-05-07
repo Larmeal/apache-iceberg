@@ -1,0 +1,89 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "975b05d4-20fd-4205-a46c-1064ddb67461",
+  "location" : "warehouse/example_test",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1714901424264,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "vendor_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "trip_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "trip_distance",
+      "required" : false,
+      "type" : "float"
+    }, {
+      "id" : 4,
+      "name" : "fare_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "store_and_fwd_flag",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "Larmeal",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 7756389368573949685,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 7756389368573949685,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7756389368573949685,
+    "timestamp-ms" : 1714901424264,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714900916000",
+      "added-data-files" : "4",
+      "added-records" : "4",
+      "added-files-size" : "5974",
+      "changed-partition-count" : "1",
+      "total-records" : "4",
+      "total-files-size" : "5974",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-7756389368573949685-1-d744700f-2912-4862-8e21-4c1b742fac57.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1714901424264,
+    "snapshot-id" : 7756389368573949685
+  } ],
+  "metadata-log" : [ ]
+}
