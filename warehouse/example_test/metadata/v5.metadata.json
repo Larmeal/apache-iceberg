@@ -1,0 +1,196 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "975b05d4-20fd-4205-a46c-1064ddb67461",
+  "location" : "warehouse/example_test",
+  "last-sequence-number" : 5,
+  "last-updated-ms" : 1714915684372,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "vendor_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "trip_id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "trip_distance",
+      "required" : false,
+      "type" : "float"
+    }, {
+      "id" : 4,
+      "name" : "fare_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "store_and_fwd_flag",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "Larmeal",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 6201281357802780287,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6201281357802780287,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7756389368573949685,
+    "timestamp-ms" : 1714901424264,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714900916000",
+      "added-data-files" : "4",
+      "added-records" : "4",
+      "added-files-size" : "5974",
+      "changed-partition-count" : "1",
+      "total-records" : "4",
+      "total-files-size" : "5974",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-7756389368573949685-1-d744700f-2912-4862-8e21-4c1b742fac57.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 8750744565593823205,
+    "parent-snapshot-id" : 7756389368573949685,
+    "timestamp-ms" : 1714901984260,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714901505978",
+      "added-data-files" : "5",
+      "added-records" : "5",
+      "added-files-size" : "7467",
+      "changed-partition-count" : "1",
+      "total-records" : "9",
+      "total-files-size" : "13441",
+      "total-data-files" : "9",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-8750744565593823205-1-894ddf8d-f1f3-4a63-a6a3-2043385bee5a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 8121411867246861750,
+    "parent-snapshot-id" : 8750744565593823205,
+    "timestamp-ms" : 1714915418343,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714915346725",
+      "added-data-files" : "1",
+      "added-records" : "3",
+      "added-files-size" : "1625",
+      "changed-partition-count" : "1",
+      "total-records" : "12",
+      "total-files-size" : "15066",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-8121411867246861750-1-e6a98ee1-5a88-4664-a7f3-c69b49a2cfbe.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 4456078782926854740,
+    "timestamp-ms" : 1714915580000,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714915346725",
+      "added-data-files" : "1",
+      "added-records" : "3",
+      "added-files-size" : "1625",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "1625",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-4456078782926854740-1-5b91ad34-f3a7-4a52-a75a-8c75f5bdd641.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 5,
+    "snapshot-id" : 6201281357802780287,
+    "parent-snapshot-id" : 4456078782926854740,
+    "timestamp-ms" : 1714915684372,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1714915346725",
+      "added-data-files" : "2",
+      "added-records" : "2",
+      "added-files-size" : "2908",
+      "changed-partition-count" : "1",
+      "total-records" : "5",
+      "total-files-size" : "4533",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse/example_test/metadata/snap-6201281357802780287-1-018e827e-1f18-44e1-8501-1d6a4f11e270.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1714901424264,
+    "snapshot-id" : 7756389368573949685
+  }, {
+    "timestamp-ms" : 1714901984260,
+    "snapshot-id" : 8750744565593823205
+  }, {
+    "timestamp-ms" : 1714915418343,
+    "snapshot-id" : 8121411867246861750
+  }, {
+    "timestamp-ms" : 1714915580000,
+    "snapshot-id" : 4456078782926854740
+  }, {
+    "timestamp-ms" : 1714915684372,
+    "snapshot-id" : 6201281357802780287
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1714901424264,
+    "metadata-file" : "warehouse/example_test/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1714901984260,
+    "metadata-file" : "warehouse/example_test/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1714915418343,
+    "metadata-file" : "warehouse/example_test/metadata/v3.metadata.json"
+  }, {
+    "timestamp-ms" : 1714915580000,
+    "metadata-file" : "warehouse/example_test/metadata/v4.metadata.json"
+  } ]
+}
